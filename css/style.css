@@ -1,0 +1,85 @@
+/* VARIABLES GLOBALES */
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+
+body{
+    font-family: "Helvetica";
+}
+
+/* -------------------------------------------------------------------------- */
+/*                       RESPONSIVE DIMENSION: 320 X 480                      */
+/* -------------------------------------------------------------------------- */
+
+@media (max-width: 393px){
+
+    .form-sect  h3{
+        text-align: center;
+        margin: 10px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .contact-form{
+        margin: 25px;
+    }
+    
+    input::placeholder, textarea::placeholder{
+        padding-top: 5px;
+        padding-left: 10px;    
+    }
+
+    .input-txt{
+        display: block;
+        width: 95%;
+        height: 25px;
+        border-radius: 5px;
+        margin:5px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .input-txtarea{
+        display: block;
+        width: 95%;
+        margin: 5px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        resize: none;
+    }
+
+    .list-icon > li a{
+        text-decoration: none;
+    }
+
+    .list-icon > li{
+        list-style: none;
+        text-decoration: none;
+    }
+
+    .list-icon > li{
+        display: flex;
+        justify-content: center;
+        margin: 5px;
+        padding-top: 13px;
+        padding-bottom: 13px;
+    }
+
+    .icon-item a, a:link, 
+    a:visited, a:active{
+        color: #2e2e2e;
+        text-decoration: none;
+    }
+
+    .icon-item > a > i{
+        margin-right: 5px;
+        margin-left: 5px;
+        padding-top: 2px;
+        font-size: 17px;
+    }
+
+    
+
+}
