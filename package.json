@@ -1,0 +1,22 @@
+{
+  "name": "webcatchv2",
+  "version": "1.0.0",
+  "description": "WEBCATCH V2",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nicolas-Ghost/WebCatchV2.git"
+  },
+  "author": "WebCatch",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nicolas-Ghost/WebCatchV2/issues"
+  },
+  "homepage": "https://github.com/Nicolas-Ghost/WebCatchV2#readme",
+  "dependencies": {
+    "@emailjs/browser": "3.7.0"
+  }
+}
