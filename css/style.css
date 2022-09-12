@@ -1,0 +1,71 @@
+
+/* REGLA GENERAL PARA CREAR ESTILOS CSS (buena practica tener esto)
+1. Posicionamiento --> static, absolute, relative, fixed
+2. Modelo de caja (Box model) --> margin, border, padding, content
+3. Tipografía --> tipos, tamaños de fuente, etc
+4. Estilos visuales --> box-shadow, border-radius, gradient, etc
+5.  Otros --> reglas CSS y más
+*/
+
+:root {
+    --A:#82087F;
+    --B: #6A088C;
+    --C-PRIMARIO: #3E0D76;
+    --D: #22088C;
+    --E: #081182;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+/* ///////////////////////////////        ///////////////////////////////
+/////////////////////////////// NAVBAR ///////////////////////////////
+///////////////////////////////        /////////////////////////////// */
+
+.nav {
+    width: 100%;
+    height: 66px;
+    background-color: var(--C-PRIMARIO);    
+
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    height: 66px;
+    /* margin: 0 auto; */
+}
+
+/* LOGO NAV */
+
+.nav-container__logo-container {
+    width: 50px;
+    height: 50px;
+    background-color: aliceblue;
+}
+
+/* ARTICULOS NAV */
+
+.nav-container__articles-container {
+    
+}
+
+.nav__articles {
+    display: flex;
+    width: ;
+    list-style: none;
+}
+
+.nav__text a {
+    color: aliceblue;
+    text-decoration: none;
+}
