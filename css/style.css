@@ -1,5 +1,5 @@
 
-/* REGLA GENERAL PARA CREAR ESTILOS CSS (buena practica tener esto)
+/* REGLA GENERAL PARA CREAR ESTILOS CSS (buena practica, tener esto)
 1. Posicionamiento --> static, absolute, relative, fixed
 2. Modelo de caja (Box model) --> margin, border, padding, content
 3. Tipografía --> tipos, tamaños de fuente, etc
@@ -37,20 +37,20 @@ html {
 }
 
 .nav-container {
-    display: flex;
+    /* display: flex;
     justify-content: space-between;
     align-items: center;
     width: 50%;
     height: 66px;
-    /* margin: 0 auto; */
+    margin: 0 auto; */
 }
 
 /* LOGO NAV */
 
 .nav-container__logo-container {
-    width: 50px;
+    /* width: 50px;
     height: 50px;
-    background-color: aliceblue;
+    background-color: aliceblue; */
 }
 
 /* ARTICULOS NAV */
@@ -60,12 +60,12 @@ html {
 }
 
 .nav__articles {
-    display: flex;
+    /* display: flex;
     width: ;
-    list-style: none;
+    list-style: none; */
 }
 
 .nav__text a {
-    color: aliceblue;
-    text-decoration: none;
+    /* color: aliceblue;
+    text-decoration: none; */
 }
