@@ -1,0 +1,19 @@
+:root {
+    --A:#82087F;
+    --B: #6A088C;
+    --C-PRIMARIO: #3E0D76;
+    --extra1: #350b66;
+    --D: #22088C;
+    --E: #081182;
+}
+@media (min-width:1024px) {
+
+    .nav-container__logo-container .webcatch {
+        display: block;
+        position: relative;
+        top: 5px;
+        width: 150px;
+        height: 60px;
+        margin-left: 10px;
+    }
+}
