@@ -1,78 +1,117 @@
-import emailjs from '@emailjs/browser'
 
-// Funcion que trae los values del formulario y valida el envio del correo
-const getInfo = async () => {
+// Signo dolar para identificar que es un elemento del DOM
+const $form = document.querySelector("#cont-form")
+$form.addEventListener("submit", getParams)
 
-    const reg = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3,4})+$/
-    let nameUser = document.getElementById("nameUser").value
-    let emailUser = document.getElementById("emailUser").value
-    let subjectUser = document.getElementById("subjectUser").value
-    let msmUser = document.getElementById('msmUser').value
+// pop-up
+const $dial = document.getElementById("pop-up")   
+const $dialBtn = document.getElementById("pop-btn")
+$dialBtn.addEventListener("click", ev => {
+    ev.preventDefault()
+    if($dial.open){
+        $dial.close("Ok")
+    }    
+})
 
-    if(!reg.test(emailUser)){
-        const titl = document.createElement('h3') 
-        const parr = document.createElement('p')
-        titl.textContent = "Algo falla..."
-        parr.textContent = "Porfavor revisa que los datos ingresados esten correctamente escritos"
-        
-        const dial = document.createElement("dialog")        
-        dial.id = "popup"
-        dial.appendChild(titl)
-        dial.appendChild(parr)
+
+async function sendEmail( data ) {
+    
+    const servID = 'gmail'
+    const tempID = 'mails_webC'
+    const pubKey = 'iW2zQgorsoppySg6k'
+    const url = 'https://api.emailjs.com/api/v1.0/email/send'
+
+    // Obj con los datos
+    let userData = {
+        from_name: data.get('userName'),
+        from_email: data.get('userEmail'),
+        subject: data.get('userSubject'),
+        message: data.get('userMsm')
     }
 
-    const valSend = await sendEmail(nameUser, emailUser, subjectUser, msmUser)
+    console.log('Estos son los datos')
+    console.log(userData)
+    
+    // Parametros de la API
+    const dataBody = {
+        service_id: servID,
+        template_id: tempID,
+        user_id: pubKey,
+        template_params: userData
+    };
 
-    if (!valSend) {
-        
+    
+    let params = {
+        method: 'POST',
+        body: JSON.stringify(dataBody),
+        headers:{
+            'Content-Type': 'application/json'
+        }
+    }
+
+    const resp = await fetch(url, params )
+
+    if (resp.status != 200) {
+        console.log('Papi paila si me entiende? ')
+        return false
+    }
+
+    console.log('Paso papi, todo vientos')
+    return true
+    
+}
+
+async function getParams(ev) {
+
+    // const reg = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3,4})+$/
+    // No recarga la pagina
+    ev.preventDefault()
+    // FormData trae los elementos del formulario
+    // El this hace referencia a $form ya que esta enlanzado el ev
+    const form = new FormData(this)
+
+    // if (!reg.test(form.get('userEmail'))) {
+    //     const titl = document.createElement('h3') 
+    //     const parr = document.createElement('p')
+    //     titl.textContent = "Algo falla..."
+    //     parr.textContent = "Porfavor revisa que los datos ingresados esten correctamente escritos"
+    //     // se agrega hijos al popup     
+    //     $dial.appendChild(titl)
+    //     $dial.appendChild(parr)
+    //     // Muestra el modal
+    //     $dial.showModal()
+    // }
+
+    const send = await sendEmail( form )
+
+    console.log('send = ', send)
+
+    // debugger
+
+    if (!send) {
         const titl = document.createElement('h3') 
         const parr = document.createElement('p')
         titl.textContent = "Algo falla..."
         parr.textContent = "Intenta realizar nuevamente la acción, si el problema persiste espera unos minutos."
         
-        const dial = document.createElement("dialog")        
-        dial.id = "popup"
-        dial.appendChild(titl)
-        dial.appendChild(parr)
+        // se agrega hijos al popup      
+        $dial.appendChild(titl)
+        $dial.appendChild(parr)
+        $dial.showModal()
     }
 
     const titl = document.createElement('h3') 
-        const parr = document.createElement('p')
-        titl.textContent = "Gracias por tu mensaje!!"
-        parr.textContent = "Nos contactaremos muy pronto para ayudarte."
-        
-        const dial = document.createElement("dialog")        
-        dial.id = "popup"
-        dial.appendChild(titl)
-        dial.appendChild(parr)
-
-}
-
-// Funcin que llama la libreria y envia el correo
-
-async function sendEmail(nameUser, emailUser, subjectUser, msmUser){
-    let params = {
-        from_name: nameUser,
-        from_email: emailUser,
-        subject: subjectUser,
-        message: msmUser
-    }
+    const parr = document.createElement('p')
+    titl.textContent = "Gracias por tu mensaje!!"
+    parr.textContent = "Nos contactaremos muy pronto para ayudarte."
     
-    const servID = 'gmail'
-    const tempID = 'mails_webC'
-    const pubKey = 'iW2zQgorsoppySg6k'
+    // se agrega hijos al popup      
+    $dial.appendChild(titl)
+    $dial.appendChild(parr)
+    $dial.showModal()
 
-    emailjs.send(servID, tempID, params, pubKey)
-    .then( res => {
-        console.log(res.status);
-        return true
-    }, err => {
-        console.error(err)
-        return false
-    })
+
+    // Resetear el formulario
+    $form.reset()
 
 }
-
-
-const btnCont = document.getElementById("contact-btn")
-btnCont.addEventListener("click", getInfo)
