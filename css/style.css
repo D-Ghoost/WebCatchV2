@@ -24,7 +24,7 @@ background-image: url(../img/World.jpg);
 /* Contenedor principal*/
 .cajainicio{
     width:100%;
-    max-width: 1000px;
+
 }
 /*Posición de la descripcion de texto*/
 .iniciotexto{
@@ -32,7 +32,7 @@ background-image: url(../img/World.jpg);
     text-align: center;
     width: 100%;
     max-width: 500px;
-    margin-left: 50%;
+    margin: 0 auto;
     top: 60px;
 }
 
