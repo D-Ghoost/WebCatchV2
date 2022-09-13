@@ -11,6 +11,7 @@
     --A:#82087F;
     --B: #6A088C;
     --C-PRIMARIO: #3E0D76;
+    --extra1: #350b66;
     --D: #22088C;
     --E: #081182;
 }
@@ -30,42 +31,91 @@ html {
 ///////////////////////////////        /////////////////////////////// */
 
 .nav {
-    width: 100%;
-    height: 66px;
-    background-color: var(--C-PRIMARIO);    
+        
 
 }
 
 .nav-container {
-    /* display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 50%;
-    height: 66px;
-    margin: 0 auto; */
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    background-color: var(--C-PRIMARIO);
+
 }
 
-/* LOGO NAV */
+/* LOGO */
 
 .nav-container__logo-container {
-    /* width: 50px;
-    height: 50px;
-    background-color: aliceblue; */
+    width: 180px;
+    height: 66px;
+    display: flex;
+    align-items: center;
+
 }
 
-/* ARTICULOS NAV */
-
-.nav-container__articles-container {
-    
+.nav-container__logo-container .cow {
+    width: 100px;
+    height: 60px;
+    margin-left: 30px;
 }
 
-.nav__articles {
-    /* display: flex;
-    width: ;
-    list-style: none; */
+.nav-container__logo-container .webcatch {
+    display: none;
+}
+
+/* OPTIONS */
+
+
+.nav__articles{
+    display: none;
+    list-style: none;
+    align-items: flex-start;
+    flex-direction: column;
+    background-color: var(--extra1);
+}   
+
+.nav__articles.active {
+    display: flex;
+}
+
+.nav__text {
+
+    width: 100%;
+    text-align: center;
+}
+
+.nav__text:hover {
+    background-color: var(--B);
+
 }
 
 .nav__text a {
-    /* color: aliceblue;
-    text-decoration: none; */
+    line-height: 3.3rem;
+    color: aliceblue;
+    text-decoration: none;
+
 }
+
+
+/* toggle */
+
+.nav-container__toggle {
+    position: absolute;
+    left: calc(100% - 55px);
+    top: calc(6.8% - 35px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height:21px;
+}
+
+.bar {
+    display: block;
+    height: 4px;
+    width: 100%;
+    background-color:white;
+    border-radius: 10px;
+}
+
