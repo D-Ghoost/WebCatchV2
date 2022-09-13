@@ -22,10 +22,18 @@ body{
         background-color: #171618 ;
         border-top: 10px solid #F8F8F8;
     }
+
+.footer-info{
+    position: relative;
+}
     
     
 .footer-copy{
         color: #6b6b6b;
         margin-left: 20px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+
+    
     }
     
