@@ -16,15 +16,17 @@
         <!-- Formulario de contacto -->
         <section class="form-sect">
             <h3>Contacta con nosotros</h3>
-            <form action="" class="contact-form" method="get">
-                <input type="text" placeholder="Ingresa tu nombre" class="input-txt" id="nameUser" minlength="3">
-                <input type="email" placeholder="Ingresa tu correo" class="input-txt" id="emailUser" minlength="4">
-                <input type="text" placeholder="Ingresa el asunto" class="input-txt" id="subjectUser" min="4">
-                <textarea name="contactTxt" id="contactTxt" cols="30" rows="10" placeholder="Mensaje"
-                    class="input-txtarea" id="msmUser" minlength="4"></textarea>
-                <button class="form-btn" onclick="getInfo()" type="submit">Enviar</button>
+            <form class="contact-form" method="get" id="cont-form">
+                <input name="userName" type="text" placeholder="Ingresa tu nombre" class="input-txt"  minlength="3">
+                <input name="userEmail" type="email" placeholder="Ingresa tu correo" class="input-txt"  minlength="4">
+                <input name="userSubject" type="text" placeholder="Ingresa el asunto" class="input-txt" min="4">
+                <textarea  name="userMsm" cols="30" rows="10" placeholder="Mensaje" class="input-txtarea"  minlength="4"></textarea>
+                <button class="form-btn" id="contact-btn" type="submit">Enviar</button>
             </form>
-            
+            <!-- Pop up que muestra mensaje en pantalla -->
+            <dialog id="pop-up">
+                    <button id="pop-btn">Aceptar</button>
+            </dialog>
         </section>
         <!-- Iconos de github de los devCatcher -->
         <section class="icon-sect">
@@ -63,5 +65,5 @@
         </section>
     </article>
 </body>
-
+<script src="js/main.js"></script>
 </html>
