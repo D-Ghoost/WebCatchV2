@@ -1,2 +1,4 @@
-# Imagenes
+# Ignorar archivos de mac
+.DS_store
+# Ignorar las imagenes 
 img

@@ -20,20 +20,29 @@ body{
         text-align: center;
         margin-top: 40px;
         background-color: #171618 ;
-        border-top: 10px solid #F8F8F8;
+        border-t
     }
 
-.footer-info{
-    position: relative;
+div.footer-info {
+    display: inline;
 }
-    
+
+.linea{
+    border-top: 1px solid grey;
+    height: 2px;
+    margin: 20px 500px;
+  }
+
+  ul.lista li {
+    display: inline;
+    padding-right: 0.5em;
+  }
     
 .footer-copy{
         color: #6b6b6b;
         margin-left: 20px;
         margin-bottom: 20px;
         margin-top: 20px;
-
-    
+        padding-bottom: 30px;
     }
     
