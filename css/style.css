@@ -11,7 +11,7 @@
 :root {
     --A:#82087F;
     --B: #6A088C;
-    --C-PRIMARIO: #3E0D76;
+    --C-PRIMARIO: #6E2DB8;
     --extra1: #350b66;
     --D: #22088C;
     --E: #081182;
@@ -23,18 +23,30 @@
     margin: 0;
 }
 
+/* FUENTES */
+
+@font-face {
+    font-family: 'JosefinSans';
+    src: url('font/JosefinSans-VariableFont_wght.ttf') format("truetype"),
+    url("font/JosefinSans-Italic-VariableFont_wght.ttf") format("truetype");
+        
+}
+
+@font-face {
+    font-family: 'Rubik';
+    src: url('font/Rubik-VariableFont_wght.ttf') format("truetype"),
+    url("font/Rubik-Italic-VariableFont_wght.ttf") format("truetype");
+}
+
 html {
     font-size: 62.5%;
+    font-family: 'JosefinSans', 'Rubik';
 }
 
 /* ///////////////////////////////        ///////////////////////////////
 /////////////////////////////// NAVBAR ///////////////////////////////
 ///////////////////////////////        /////////////////////////////// */
 
-.nav {
-        
-
-}
 
 .nav-container {
     display: flex;
@@ -162,7 +174,7 @@ background-image: url(../img/World.jpg);
 /*Estilo Fuentes*/
 .iniciotexto h1{
 font-size: 60px;
-font-family: sans-serif;
+font-family: 'JosefinSans', 'Rubik';
 color: #6A088C;
 }
 
@@ -186,16 +198,7 @@ color: #6A088C;
     opacity: 0.4;
 }
 
-*{
-    margin: 0px;
-    padding: 0px;
-    text-decoration: 0px;
-}
 
-
-body{
-    font-family: Helvetica, Arial, sans-serif;
-}
          
 /* ----------------------------------------------------------------------------*/
 /*                               FOOTER                                        */
@@ -225,18 +228,6 @@ body{
     
     }
     
-
-/* VARIABLES GLOBALES */
-*{
-    margin: 0px;
-    padding: 0px;
-
-}
-
-body{
-    font-family: "Helvetica";
-}
-
 
     /* section del form */
     .form-sect  h3{
