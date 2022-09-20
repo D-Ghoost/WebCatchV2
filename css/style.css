@@ -18,19 +18,34 @@ body{
         width: 100%;
         height: 100%;
         text-align: center;
-        margin-top: 40px;
         background-color: #171618 ;
-        border-t
     }
 
-div.footer-info {
-    display: inline;
+.footer-info{
+
+    padding-top: 10px;
 }
+
+.icon-phone{
+    margin: 10px;
+}
+
+.icon-mail{
+    margin: 20px;
+}
+
+/*.icon-location{
+    margin: 10px
+}*/
 
 .linea{
     border-top: 1px solid grey;
     height: 2px;
-    margin: 20px 500px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+
   }
 
   ul.lista li {
@@ -46,3 +61,28 @@ div.footer-info {
         padding-bottom: 30px;
     }
     
+@media (min-width: 1024px){
+
+  .footer-info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .icon-phone{
+    margin: 40px;
+}
+
+.icon-mail{
+    margin: 40px;
+}
+
+.icon-location{
+    margin: 40px
+}
+
+
+}
+
+
