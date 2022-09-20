@@ -1,4 +1,11 @@
+<<<<<<< HEAD
 # Ignorar archivos de mac
 .DS_store
 # Ignorar las imagenes 
 img
+=======
+# Imagenes
+img
+# node_modules
+node_modules
+>>>>>>> main

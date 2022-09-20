@@ -1,3 +1,194 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+/* REGLA GENERAL PARA CREAR ESTILOS CSS (buena practica, tener esto)
+1. Posicionamiento --> static, absolute, relative, fixed
+2. Modelo de caja (Box model) --> margin, border, padding, content
+3. Tipografía --> tipos, tamaños de fuente, etc
+4. Estilos visuales --> box-shadow, border-radius, gradient, etc
+5.  Otros --> reglas CSS y más
+*/
+
+:root {
+    --A:#82087F;
+    --B: #6A088C;
+    --C-PRIMARIO: #3E0D76;
+    --extra1: #350b66;
+    --D: #22088C;
+    --E: #081182;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+/* ///////////////////////////////        ///////////////////////////////
+/////////////////////////////// NAVBAR ///////////////////////////////
+///////////////////////////////        /////////////////////////////// */
+
+.nav {
+        
+
+}
+
+.nav-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    background-color: var(--C-PRIMARIO);
+
+}
+
+/* LOGO */
+
+.nav-container__logo-container {
+    width: 180px;
+    height: 66px;
+    display: flex;
+    align-items: center;
+
+}
+
+.nav-container__logo-container .cow {
+    width: 100px;
+    height: 60px;
+    margin-left: 30px;
+}
+
+.nav-container__logo-container .webcatch {
+    display: none;
+}
+
+/* OPTIONS */
+
+
+.nav__articles{
+    display: none;
+    list-style: none;
+    align-items: flex-start;
+    flex-direction: column;
+    background-color: var(--extra1);
+}   
+
+.nav__articles.active {
+    display: flex;
+}
+
+.nav__text {
+
+    width: 100%;
+    text-align: center;
+}
+
+.nav__text:hover {
+    background-color: var(--B);
+
+}
+
+.nav__text a {
+    line-height: 3.3rem;
+    color: aliceblue;
+    text-decoration: none;
+
+}
+
+
+/* toggle */
+
+.nav-container__toggle {
+    position: absolute;
+    left: calc(100% - 55px);
+    top: calc(6.8% - 35px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height:21px;
+}
+
+.bar {
+    display: block;
+    height: 4px;
+    width: 100%;
+    background-color:white;
+    border-radius: 10px;
+}
+
+=======
+/*Imagen de inicio animada con movimiento*/
+
+body{
+        margin: 0;
+        padding: 0;
+}
+/*Contenedor con imagen de fondo*/
+.inicio-contenedor{
+width: 100%;
+height: 400px;
+background-image: url(../img/bckimg.jpg);
+background-size: 110%;
+animation: mov 15s infinite linear alternate;
+position: relative;
+-webkit-transition: background 1s;
+-moz-transition: background 1s;
+-o-transition: background 1s;
+transition: background 1s;
+}
+
+.inicio-contenedor:hover{
+background-image: url(../img/World.jpg);
+}
+/* Contenedor principal*/
+.cajainicio{
+    width:100%;
+
+}
+/*Posición de la descripcion de texto*/
+.iniciotexto{
+    position: relative;
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    top: 60px;
+}
+
+/*Estilo Fuentes*/
+.iniciotexto h1{
+font-size: 60px;
+font-family: sans-serif;
+color: #6A088C;
+}
+
+.iniciotexto p{
+    font-size: 14px;
+    color: #FFFF;
+}
+
+/*Animcacion de movimiento*/
+@keyframes mov{
+    from {background-position: bottom right;}
+    to {background-position: top left;}    
+}
+
+/*Color de degradado de imagen*/
+.iniciodegrad{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: -webkit-linear-gradient(left, #151117, #82087F, #B82403);
+    opacity: 0.4;
+}
+>>>>>>> origin/Oscar
+=======
 *{
     margin: 0px;
     padding: 0px;
@@ -61,6 +252,7 @@ body{
         padding-bottom: 30px;
     }
     
+<<<<<<< HEAD
 @media (min-width: 1024px){
 
   .footer-info{
@@ -86,3 +278,433 @@ body{
 }
 
 
+=======
+>>>>>>> nisbero
+=======
+/* VARIABLES GLOBALES */
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+
+body{
+    font-family: "Helvetica";
+}
+
+
+    /* section del form */
+    .form-sect  h3{
+        text-align: center;
+        margin: 10px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .contact-form{
+        margin: 25px;
+    }
+    
+    input::placeholder, textarea::placeholder{
+        font-style: italic;    
+    }
+
+    .input-txt{
+        display: block;
+        width: 97%;
+        height: 25px;
+        border: 1px solid #2e2e2e;
+        border-radius: 5px;
+        margin:5px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding-top: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 5px;
+    }
+
+    .input-txtarea{
+        display: block;
+        width: 97%;
+        margin: 5px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding-top: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 5px;
+        border: 1px solid #2e2e2e;
+        border-radius: 5px;
+        resize: none;
+    }
+
+    .form-btn{
+        display: block;
+        width: 15%;
+        height: 30px;
+        margin: 5px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        border: 1px solid #2e2e2e;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 300ms;
+    }
+
+    .form-btn:hover{
+        color: white;
+        font-weight: bold;
+        background-color: #3E0D76;
+    }
+
+    /* Section de los iconos */
+    .list-icon{
+        text-align: center;
+    }
+
+    .list-icon > li a{
+        text-decoration: none;
+    }
+
+    .list-icon li{
+        list-style: none;
+        text-decoration: none;
+    }
+
+    .list-icon li{
+        display: inline;
+        margin: 5px;
+        padding-top: 13px;
+        padding-bottom: 13px;
+    }
+
+    /* .list-icon > li a{
+        display: block;
+    } */
+
+    .icon-item a, a:link, 
+    a:visited, a:active{
+        color: #2e2e2e;
+        text-decoration: none;
+    }
+
+    .icon-item > a{
+        margin-left: 5px;
+        padding-top: 2px;
+    }
+
+    .icon-item > a > i{
+        /* margin-right: 5px;
+        margin-left: 5px;
+        padding-top: 2px; */
+        font-size: 20px;
+    }
+
+
+@media (max-width:2560px){
+    
+    /* section del form */
+
+    .form-sect  h3{
+        text-align: center;
+        margin: 10px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .contact-form{
+        margin: auto;
+    }
+    
+    input::placeholder, textarea::placeholder{
+        font-style: italic;     
+    }
+
+    .input-txt{
+        display: block;
+        width: 70%;
+        height: 25px;
+        border: 1px solid #2e2e2e;
+        border-radius: 5px;
+        margin:5px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding-top: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 5px;
+    }
+
+    .input-txtarea{
+        display: block;
+        width: 70%;
+        margin: 5px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding-top: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 5px;
+        border: 1px solid #2e2e2e;
+        border-radius: 5px;
+        resize: none;
+    }
+
+    .form-btn{
+        display: block;
+        width: 20%;
+        height: 30px;
+        margin: 5px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        border: 1px solid #2e2e2e;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 300ms;
+    }
+
+    .form-btn:hover{
+        color: white;
+        font-weight: bold;
+        background-color: #3E0D76;
+    }
+
+    /* Section de los iconos */
+    .list-icon{
+        text-align: center;
+    }
+
+    .list-icon > li a{
+        text-decoration: none;
+    }
+
+    .list-icon li{
+        list-style: none;
+        text-decoration: none;
+    }
+
+    .list-icon li{
+        display: inline;
+        margin: 5px;
+        padding-top: 13px;
+        padding-bottom: 13px;
+    }
+
+    /* .list-icon > li a{
+        display: block;
+    } */
+
+    .icon-item a, a:link, 
+    a:visited, a:active{
+        color: #2e2e2e;
+        text-decoration: none;
+    }
+
+    .icon-item > a{
+        margin-left: 5px;
+        padding-top: 2px;
+    }
+
+    .icon-item > a > i{
+        /* margin-right: 5px;
+        margin-left: 5px;
+        padding-top: 2px; */
+        font-size: 20px;
+    }
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*                      RESPONSIVE RESOLUTION: MIN 1024px                      */
+/* -------------------------------------------------------------------------- */
+
+@media (max-width: 1024px){
+
+    /* section del form */
+    .form-sect  h3{
+        text-align: center;
+        margin: 10px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .contact-form{
+        margin: 25px;
+    }
+    
+    input::placeholder, textarea::placeholder{
+        font-style: italic;     
+    }
+
+    .input-txt{
+        display: block;
+        width: 95%;
+        height: 25px;
+        border: 1px solid #2e2e2e;
+        border-radius: 5px;
+        margin:5px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding-top: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 5px;
+    }
+
+    .input-txtarea{
+        display: block;
+        width: 95%;
+        margin: 5px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding-top: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 5px;
+        border: 1px solid #2e2e2e;
+        border-radius: 5px;
+        resize: none;
+    }
+
+    .form-btn{
+        display: block;
+        width: 20%;
+        height: 30px;
+        margin: 5px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        border: 1px solid #2e2e2e;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 300ms;
+    }
+
+    .form-btn:hover{
+        color: white;
+        font-weight: bold;
+        background-color: #3E0D76;
+    }
+
+    /* Section de los iconos */
+    .list-icon{
+        text-align: center;
+    }
+
+    .list-icon > li a{
+        text-decoration: none;
+    }
+
+    .list-icon li{
+        list-style: none;
+        text-decoration: none;
+    }
+
+    .list-icon li{
+        display: inline;
+        margin: 5px;
+        padding-top: 13px;
+        padding-bottom: 13px;
+    }
+
+    /* .list-icon > li a{
+        display: block;
+    } */
+
+    .icon-item a, a:link, 
+    a:visited, a:active{
+        color: #2e2e2e;
+        text-decoration: none;
+    }
+
+    .icon-item > a{
+        margin-left: 5px;
+        padding-top: 2px;
+    }
+
+    .icon-item > a > i{
+        /* margin-right: 5px;
+        margin-left: 5px;
+        padding-top: 2px; */
+        font-size: 20px;
+    }
+}
+
+/* -------------------------------------------------------------------------- */
+/*                         RESPONSIVE RESOLUTION 636px                        */
+/* -------------------------------------------------------------------------- */
+
+@media (max-width: 636px ){
+
+    /* Section del form */
+
+    .form-sect  h3{
+        text-align: center;
+        margin: 10px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .contact-form{
+        margin: 25px;
+    }
+    
+    input::placeholder, textarea::placeholder{
+        font-style: italic;      
+    }
+
+    .input-txt{
+        display: block;
+        width: 91%;
+        height: 25px;
+        border: 1px solid #2e2e2e;
+        border-radius: 5px;
+        margin:5px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding-top: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 5px;
+    }
+
+    .input-txtarea{
+        display: block;
+        width: 91%;
+        margin: 5px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding-top: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 5px;
+        border: 1px solid #2e2e2e;
+        border-radius: 5px;
+        resize: none;
+    }
+
+    .form-btn{
+        display: block;
+        width: 30%;
+        height: 20px;
+        margin: 5px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        border: 1px solid #2e2e2e;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    /* Section de los iconos */
+
+    .icon-sect{
+        visibility: hidden;
+    }
+}
+
+>>>>>>> D-Ghoost
+>>>>>>> main

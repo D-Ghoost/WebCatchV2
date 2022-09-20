@@ -1,14 +1,118 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Boxicons CSS -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/style.css">
     <title>WebCatch</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../WebCatch/css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/tablet.css" media="(min-width:768px)">
+    <link rel="stylesheet" href="./css/Laptop.css" media="(min-width:1024px)">
+    <link rel="stylesheet" href="./css/4k.css" media="(min-width:2560px)">
+
+    <script src="script.js" defer></script>
 </head>
+
 <body>
-<!--Inicio del Pie de Pagina-->
+<!-- //////////////////////////////NAVBAR/////////////////////////////// -->
+    <header>
+        <!-- //////////////////////////////LOGO/////////////////////////////// -->
+
+        <nav class="nav">
+            <section class="nav-container">
+                <div class="nav-container__logo-container"> 
+                    <img class="cow" src="./img/LogoSoloCowBig.png" alt=""> 
+                    <img class="webcatch" src="./img/WebCatchTextNoBGv4.png" alt="">
+                </div>
+        <!-- //////////////////////////////TOGGLE MOBILE/////////////////////////////// -->
+                <a href="#" class="nav-container__toggle" >
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+
+                </a>
+        <!-- //////////////////////////////OPTIONS/////////////////////////////// -->
+                <div class="nav-container__articles-container">
+                    <ul class="nav__articles">
+                        <li class="nav__text"> <a href="#">INICIO</a></li>
+                        <li class="nav__text"> <a href="#">ABOUT US</a></li>
+                        <li class="nav__text"> <a href="#">PROYECTOS</a></li>
+                        <li class="nav__text"> <a href="#">STAFF</a></li>
+                        <li class="nav__text"> <a href="#">PRECIOS</a></li>
+                        <li class="nav__text"> <a href="#">CONTACTENOS</a></li>
+                    </ul>
+                </div>
+            </section>
+        </nav>
+    </header>
+    <div class="inicio-contenedor">
+        <div class="iniciodegrad"></div>            
+        <div class="cajainicio">
+            <div class="iniciotexto">        
+                <h1>Webcatch</h1>
+                <p>Este es un texto de referencia Este es un texto de referenciaEste es un texto de referenciaEste es un texto de referenciaEste es un texto de referenciaEste es un texto de referencia</p>
+            </div>
+        </div>
+    </div>
+    <article class="contact-art">
+        <!-- Formulario de contacto -->
+        <section class="form-sect">
+            <h3>Contacta con nosotros</h3>
+            <form class="contact-form" method="get" id="cont-form">
+                <input name="userName" type="text" placeholder="Ingresa tu nombre" class="input-txt"  minlength="3">
+                <input name="userEmail" type="email" placeholder="Ingresa tu correo" class="input-txt"  minlength="4">
+                <input name="userSubject" type="text" placeholder="Ingresa el asunto" class="input-txt" min="4">
+                <textarea  name="userMsm" cols="30" rows="10" placeholder="Mensaje" class="input-txtarea"  minlength="4"></textarea>
+                <button class="form-btn" id="contact-btn" type="submit">Enviar</button>
+            </form>
+            <!-- Pop up que muestra mensaje en pantalla -->
+            <dialog id="pop-up">
+                    <button id="pop-btn">Aceptar</button>
+            </dialog>
+        </section>
+        <!-- Iconos de github de los devCatcher -->
+        <section class="icon-sect">
+            <ul class="list-icon">
+                <li class="icon-item">
+                    <a href="https://github.com/Groovesgt">
+                        <i class='bx bxl-github'></i>
+                        @Groovesgt
+                    </a>
+                </li>
+                <li class="icon-item">
+                    <a href="https://github.com/Oscardanch">
+                        <i class='bx bxl-github'></i>
+                        @Oscardanch
+                    </a>
+                </li>
+                <li class="icon-item">
+                    <a href="https://github.com/nisbero">
+                        <i class='bx bxl-github'></i>
+                        @nisbero
+                    </a>
+                </li>
+                <li class="icon-item">
+                    <a href="https://github.com/Jusky98">
+                        <i class='bx bxl-github'></i>
+                        @Jusky98
+                    </a>
+                </li>
+                <li class="icon-item">
+                    <a href="https://github.com/D-Ghoost">
+                        <i class='bx bxl-github'></i>
+                        @D-Ghoost
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </article>
+    <!--Inicio del Pie de Pagina-->
     <footer class="footer">
         <div class="footer-info">
             <div class="icon-phone">
@@ -61,4 +165,5 @@
        </footer>
 <!--Fin del Pie de Pagina-->   
 </body>
+<script src="js/main.js"></script>
 </html>
