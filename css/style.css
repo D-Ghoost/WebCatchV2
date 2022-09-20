@@ -1,6 +1,4 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 
 /* REGLA GENERAL PARA CREAR ESTILOS CSS (buena practica, tener esto)
 1. Posicionamiento --> static, absolute, relative, fixed
@@ -122,7 +120,7 @@ html {
     border-radius: 10px;
 }
 
-=======
+
 /*Imagen de inicio animada con movimiento*/
 
 body{
@@ -187,8 +185,7 @@ color: #6A088C;
     background: -webkit-linear-gradient(left, #151117, #82087F, #B82403);
     opacity: 0.4;
 }
->>>>>>> origin/Oscar
-=======
+
 *{
     margin: 0px;
     padding: 0px;
@@ -228,8 +225,7 @@ body{
     
     }
     
->>>>>>> nisbero
-=======
+
 /* VARIABLES GLOBALES */
 *{
     margin: 0px;
@@ -335,7 +331,7 @@ body{
 
     .icon-item a, a:link, 
     a:visited, a:active{
-        color: #2e2e2e;
+        /* color: #2e2e2e; */
         text-decoration: none;
     }
 
@@ -448,7 +444,7 @@ body{
 
     .icon-item a, a:link, 
     a:visited, a:active{
-        color: #2e2e2e;
+        /* color: #2e2e2e; */
         text-decoration: none;
     }
 
@@ -565,7 +561,7 @@ body{
 
     .icon-item a, a:link, 
     a:visited, a:active{
-        color: #2e2e2e;
+        /* color: #2e2e2e; */
         text-decoration: none;
     }
 
@@ -655,4 +651,3 @@ body{
     }
 }
 
->>>>>>> D-Ghoost
