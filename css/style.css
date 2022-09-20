@@ -1,6 +1,4 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 
 /* REGLA GENERAL PARA CREAR ESTILOS CSS (buena practica, tener esto)
 1. Posicionamiento --> static, absolute, relative, fixed
@@ -13,7 +11,7 @@
 :root {
     --A:#82087F;
     --B: #6A088C;
-    --C-PRIMARIO: #3E0D76;
+    --C-PRIMARIO: #6E2DB8;
     --extra1: #350b66;
     --D: #22088C;
     --E: #081182;
@@ -25,18 +23,30 @@
     margin: 0;
 }
 
+/* FUENTES */
+
+@font-face {
+    font-family: 'JosefinSans';
+    src: url('font/JosefinSans-VariableFont_wght.ttf') format("truetype"),
+    url("font/JosefinSans-Italic-VariableFont_wght.ttf") format("truetype");
+        
+}
+
+@font-face {
+    font-family: 'Rubik';
+    src: url('font/Rubik-VariableFont_wght.ttf') format("truetype"),
+    url("font/Rubik-Italic-VariableFont_wght.ttf") format("truetype");
+}
+
 html {
     font-size: 62.5%;
+    font-family: 'JosefinSans', 'Rubik';
 }
 
 /* ///////////////////////////////        ///////////////////////////////
 /////////////////////////////// NAVBAR ///////////////////////////////
 ///////////////////////////////        /////////////////////////////// */
 
-.nav {
-        
-
-}
 
 .nav-container {
     display: flex;
@@ -122,13 +132,9 @@ html {
     border-radius: 10px;
 }
 
-=======
+
 /*Imagen de inicio animada con movimiento*/
 
-body{
-        margin: 0;
-        padding: 0;
-}
 /*Contenedor con imagen de fondo*/
 .inicio-contenedor{
 width: 100%;
@@ -164,7 +170,7 @@ background-image: url(../img/World.jpg);
 /*Estilo Fuentes*/
 .iniciotexto h1{
 font-size: 60px;
-font-family: sans-serif;
+font-family: 'JosefinSans', 'Rubik';
 color: #6A088C;
 }
 
@@ -187,19 +193,9 @@ color: #6A088C;
     background: -webkit-linear-gradient(left, #151117, #82087F, #B82403);
     opacity: 0.4;
 }
->>>>>>> origin/Oscar
-=======
-*{
-    margin: 0px;
-    padding: 0px;
-    text-decoration: 0px;
-}
 
 
-body{
-    font-family: Helvetica, Arial, sans-serif;
-}
-         
+
 /* ----------------------------------------------------------------------------*/
 /*                               FOOTER                                        */
 /* ----------------------------------------------------------------------------*/   
@@ -278,6 +274,7 @@ body{
 /* ----------------------------------------------------------------------------*/  
 
 
+<<<<<<< HEAD
 /* VARIABLES GLOBALES */
 *{
     margin: 0px;
@@ -289,6 +286,8 @@ body{
     font-family: "Helvetica";
 }
 
+=======
+>>>>>>> main
 
     /* section del form */
     .form-sect  h3{
@@ -383,7 +382,7 @@ body{
 
     .icon-item a, a:link, 
     a:visited, a:active{
-        color: #2e2e2e;
+        /* color: #2e2e2e; */
         text-decoration: none;
     }
 
@@ -496,7 +495,7 @@ body{
 
     .icon-item a, a:link, 
     a:visited, a:active{
-        color: #2e2e2e;
+        /* color: #2e2e2e; */
         text-decoration: none;
     }
 
@@ -613,7 +612,7 @@ body{
 
     .icon-item a, a:link, 
     a:visited, a:active{
-        color: #2e2e2e;
+        /* color: #2e2e2e; */
         text-decoration: none;
     }
 
@@ -703,5 +702,8 @@ body{
     }
 }
 
+<<<<<<< HEAD
 >>>>>>> D-Ghoost
+>>>>>>> main
+=======
 >>>>>>> main
