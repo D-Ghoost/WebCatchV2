@@ -6,7 +6,17 @@
     --D: #22088C;
     --E: #081182;
 }
-@media (min-width:1024px) {
+
+/* -------------------------------------------------------------------------- */
+/*                              RESPONSIVE LAPTOP                             */
+/* -------------------------------------------------------------------------- */
+
+
+
+@media (min-width: 1024px){
+
+
+    /* --------------------------------- NAVBAR --------------------------------- */
 
     .nav-container__logo-container .webcatch {
         display: block;
@@ -16,4 +26,144 @@
         height: 60px;
         margin-left: 10px;
     }
+
+    /* ------------------------- FORMULARIO CONTACTENOS ------------------------- */
+    .form-sect  h2{
+        text-align: center;
+        margin: 10px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        font-size: 25px;
+    }
+
+    .contact-form{
+        margin: 25px;
+    }
+    
+    input::placeholder, textarea::placeholder{
+        font-style: italic;     
+    }
+
+    .input-txt{
+        display: block;
+        width: 99%;
+        height: 25px;
+        border: 1px solid #2e2e2e;
+        border-radius: 5px;
+        margin:5px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding-top: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 5px;
+    }
+
+    .input-txtarea{
+        display: block;
+        width: 99%;
+        margin: 5px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding-top: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 5px;
+        border: 1px solid #2e2e2e;
+        border-radius: 5px;
+        resize: none;
+    }
+
+    .form-btn{
+        display: block;
+        width: 20%;
+        height: 30px;
+        margin: 5px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        border: 1px solid #2e2e2e;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 300ms;
+    }
+
+    .form-btn:hover{
+        color: white;
+        font-weight: bold;
+        background-color: #3E0D76;
+    }
+
+    /* Section de los iconos */
+
+    .icon-sect{
+        padding: 45px 30px;
+    }
+
+    .list-icon{
+        text-align: center;
+    }
+
+    .list-icon > li a{
+        text-decoration: none;
+    }
+
+    .list-icon li{
+        list-style: none;
+        text-decoration: none;
+    }
+
+    .list-icon li{
+        display: inline;
+        margin: 5px;
+        padding-top: 13px;
+        padding-bottom: 13px;
+    }
+
+    /* .list-icon > li a{
+        display: block;
+    } */
+
+    .icon-item a, a:link, 
+    a:visited, a:active{
+        /* color: #2e2e2e; */
+        text-decoration: none;
+    }
+
+    .icon-item > a{
+        margin-left: 5px;
+        padding-top: 2px;
+    }
+
+    .icon-item > a > i{
+        /* margin-right: 5px;
+        margin-left: 5px;
+        padding-top: 2px; */
+        font-size: 20px;
+    }
+
+    .icon-sect{
+        visibility: visible;
+    }
+
+    /* --------------------------------- FOOTER --------------------------------- */
+
+    .footer-info{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        }
+        
+        .icon-phone{
+        margin: 40px;
+        }
+        
+        .icon-mail{
+        margin: 40px;
+        }
+        
+        .icon-location{
+        margin: 40px
+        }
 }

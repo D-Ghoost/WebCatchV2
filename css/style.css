@@ -43,9 +43,9 @@ html {
     font-family: 'JosefinSans', 'Rubik';
 }
 
-/* ///////////////////////////////        ///////////////////////////////
-/////////////////////////////// NAVBAR ///////////////////////////////
-///////////////////////////////        /////////////////////////////// */
+/* -------------------------------------------------------------------------- */
+/*                                   NAVBAR                                   */
+/* -------------------------------------------------------------------------- */
 
 
 .nav-container {
@@ -133,7 +133,9 @@ html {
 }
 
 
-/*Imagen de inicio animada con movimiento*/
+/* -------------------------------------------------------------------------- */
+/*                                   INICIO                                   */
+/* -------------------------------------------------------------------------- */
 
 /*Contenedor con imagen de fondo*/
 .inicio-contenedor{
@@ -195,6 +197,122 @@ color: #6A088C;
 }
 
 
+/* -------------------------------------------------------------------------- */
+/*                              section del form                              */
+/* -------------------------------------------------------------------------- */
+
+
+.form-sect  h2{
+    text-align: center;
+    margin: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 25px;
+}
+
+.contact-form{
+    margin: 25px;
+}
+
+input::placeholder, textarea::placeholder{
+    font-style: italic;      
+}
+
+.input-txt{
+    display: block;
+    width: 99%;
+    height: 25px;
+    border: 1px solid #2e2e2e;
+    border-radius: 5px;
+    margin:5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+}
+
+.input-txtarea{
+    display: block;
+    width: 99%;
+    margin: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    border: 1px solid #2e2e2e;
+    border-radius: 5px;
+    resize: none;
+}
+
+.form-btn{
+    display: block;
+    width: 30%;
+    height: 20px;
+    margin: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border: 1px solid #2e2e2e;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+    .form-btn:hover{
+        color: white;
+        font-weight: bold;
+        background-color: #3E0D76;
+    }
+
+    /* Section de los iconos */
+    .list-icon{
+        text-align: center;
+    }
+
+    .list-icon > li a{
+        text-decoration: none;
+    }
+
+    .list-icon li{
+        list-style: none;
+        text-decoration: none;
+    }
+
+    .list-icon li{
+        display: inline;
+        margin: 5px;
+        padding-top: 13px;
+        padding-bottom: 13px;
+    }
+
+    /* .list-icon > li a{
+        display: block;
+    } */
+
+    .icon-item a, a:link, 
+    a:visited, a:active{
+        /* color: #2e2e2e; */
+        text-decoration: none;
+    }
+
+    .icon-item > a{
+        margin-left: 5px;
+        padding-top: 2px;
+    }
+
+    .icon-item > a > i{
+        /* margin-right: 5px;
+        margin-left: 5px;
+        padding-top: 2px; */
+        font-size: 20px;
+    }
+
+    .icon-sect{
+        visibility: hidden;
+    }
 
 /* ----------------------------------------------------------------------------*/
 /*                               FOOTER                                        */
@@ -202,486 +320,61 @@ color: #6A088C;
 
 
 .footer{
-        width: 100%;
-        height: 100%;
-        text-align: center;
-        background-color: #171618 ;
-    }
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: #171618 ;
+}
 
 .footer-info{
 
-    padding-top: 10px;
+padding-top: 10px;
 }
 
 .icon-phone{
-    margin: 10px;
+margin: 10px;
 }
 
 .icon-mail{
-    margin: 20px;
+margin: 20px;
 }
 
 /*.icon-location{
-    margin: 10px
+margin: 10px
 }*/
 
 .linea{
-    border-top: 1px solid grey;
-    height: 2px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    margin-left: 50px;
-    margin-right: 50px;
+border-top: 1px solid grey;
+height: 2px;
+margin-top: 30px;
+margin-bottom: 30px;
+margin-left: 50px;
+margin-right: 50px;
 
-  }
+}
 
-  ul.lista li {
-    display: inline;
-    padding-right: 0.5em;
-  }
-    
+ul.lista li {
+display: inline;
+padding-right: 0.5em;
+}
+
 .footer-copy{
-        color: #6b6b6b;
-        margin-top: 20px;
-        padding-bottom: 30px;
-    }
-    
-@media (min-width: 1024px){
-
-  .footer-info{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .icon-phone{
-    margin: 40px;
-}
-
-.icon-mail{
-    margin: 40px;
-}
-
-.icon-location{
-    margin: 40px
-}
-
-
+    color: #6b6b6b;
+    margin-top: 20px;
+    padding-bottom: 30px;
 }
 
 
 
-    /* section del form */
-    .form-sect  h3{
-        text-align: center;
-        margin: 10px;
-        margin-top: 15px;
-        margin-bottom: 15px;
-    }
-
-    .contact-form{
-        margin: 25px;
-    }
-    
-    input::placeholder, textarea::placeholder{
-        font-style: italic;    
-    }
-
-    .input-txt{
-        display: block;
-        width: 97%;
-        height: 25px;
-        border: 1px solid #2e2e2e;
-        border-radius: 5px;
-        margin:5px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        padding-top: 5px;
-        padding-left: 10px;
-        padding-right: 10px;
-        padding-bottom: 5px;
-    }
-
-    .input-txtarea{
-        display: block;
-        width: 97%;
-        margin: 5px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        padding-top: 5px;
-        padding-left: 10px;
-        padding-right: 10px;
-        padding-bottom: 5px;
-        border: 1px solid #2e2e2e;
-        border-radius: 5px;
-        resize: none;
-    }
-
-    .form-btn{
-        display: block;
-        width: 15%;
-        height: 30px;
-        margin: 5px;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-        border: 1px solid #2e2e2e;
-        border-radius: 5px;
-        cursor: pointer;
-        transition: all 300ms;
-    }
-
-    .form-btn:hover{
-        color: white;
-        font-weight: bold;
-        background-color: #3E0D76;
-    }
-
-    /* Section de los iconos */
-    .list-icon{
-        text-align: center;
-    }
-
-    .list-icon > li a{
-        text-decoration: none;
-    }
-
-    .list-icon li{
-        list-style: none;
-        text-decoration: none;
-    }
-
-    .list-icon li{
-        display: inline;
-        margin: 5px;
-        padding-top: 13px;
-        padding-bottom: 13px;
-    }
-
-    /* .list-icon > li a{
-        display: block;
-    } */
-
-    .icon-item a, a:link, 
-    a:visited, a:active{
-        /* color: #2e2e2e; */
-        text-decoration: none;
-    }
-
-    .icon-item > a{
-        margin-left: 5px;
-        padding-top: 2px;
-    }
-
-    .icon-item > a > i{
-        /* margin-right: 5px;
-        margin-left: 5px;
-        padding-top: 2px; */
-        font-size: 20px;
-    }
 
 
-@media (max-width:2560px){
-    
-    /* section del form */
-
-    .form-sect  h3{
-        text-align: center;
-        margin: 10px;
-        margin-top: 15px;
-        margin-bottom: 15px;
-    }
-
-    .contact-form{
-        margin: auto;
-    }
-    
-    input::placeholder, textarea::placeholder{
-        font-style: italic;     
-    }
-
-    .input-txt{
-        display: block;
-        width: 70%;
-        height: 25px;
-        border: 1px solid #2e2e2e;
-        border-radius: 5px;
-        margin:5px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        padding-top: 5px;
-        padding-left: 10px;
-        padding-right: 10px;
-        padding-bottom: 5px;
-    }
-
-    .input-txtarea{
-        display: block;
-        width: 70%;
-        margin: 5px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        padding-top: 5px;
-        padding-left: 10px;
-        padding-right: 10px;
-        padding-bottom: 5px;
-        border: 1px solid #2e2e2e;
-        border-radius: 5px;
-        resize: none;
-    }
-
-    .form-btn{
-        display: block;
-        width: 20%;
-        height: 30px;
-        margin: 5px;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-        border: 1px solid #2e2e2e;
-        border-radius: 5px;
-        cursor: pointer;
-        transition: all 300ms;
-    }
-
-    .form-btn:hover{
-        color: white;
-        font-weight: bold;
-        background-color: #3E0D76;
-    }
-
-    /* Section de los iconos */
-    .list-icon{
-        text-align: center;
-    }
-
-    .list-icon > li a{
-        text-decoration: none;
-    }
-
-    .list-icon li{
-        list-style: none;
-        text-decoration: none;
-    }
-
-    .list-icon li{
-        display: inline;
-        margin: 5px;
-        padding-top: 13px;
-        padding-bottom: 13px;
-    }
-
-    /* .list-icon > li a{
-        display: block;
-    } */
-
-    .icon-item a, a:link, 
-    a:visited, a:active{
-        /* color: #2e2e2e; */
-        text-decoration: none;
-    }
-
-    .icon-item > a{
-        margin-left: 5px;
-        padding-top: 2px;
-    }
-
-    .icon-item > a > i{
-        /* margin-right: 5px;
-        margin-left: 5px;
-        padding-top: 2px; */
-        font-size: 20px;
-    }
-}
 
 
-/* -------------------------------------------------------------------------- */
-/*                      RESPONSIVE RESOLUTION: MIN 1024px                      */
-/* -------------------------------------------------------------------------- */
 
-@media (max-width: 1024px){
 
-    /* section del form */
-    .form-sect  h3{
-        text-align: center;
-        margin: 10px;
-        margin-top: 15px;
-        margin-bottom: 15px;
-    }
 
-    .contact-form{
-        margin: 25px;
-    }
-    
-    input::placeholder, textarea::placeholder{
-        font-style: italic;     
-    }
 
-    .input-txt{
-        display: block;
-        width: 95%;
-        height: 25px;
-        border: 1px solid #2e2e2e;
-        border-radius: 5px;
-        margin:5px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        padding-top: 5px;
-        padding-left: 10px;
-        padding-right: 10px;
-        padding-bottom: 5px;
-    }
 
-    .input-txtarea{
-        display: block;
-        width: 95%;
-        margin: 5px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        padding-top: 5px;
-        padding-left: 10px;
-        padding-right: 10px;
-        padding-bottom: 5px;
-        border: 1px solid #2e2e2e;
-        border-radius: 5px;
-        resize: none;
-    }
 
-    .form-btn{
-        display: block;
-        width: 20%;
-        height: 30px;
-        margin: 5px;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-        border: 1px solid #2e2e2e;
-        border-radius: 5px;
-        cursor: pointer;
-        transition: all 300ms;
-    }
 
-    .form-btn:hover{
-        color: white;
-        font-weight: bold;
-        background-color: #3E0D76;
-    }
-
-    /* Section de los iconos */
-    .list-icon{
-        text-align: center;
-    }
-
-    .list-icon > li a{
-        text-decoration: none;
-    }
-
-    .list-icon li{
-        list-style: none;
-        text-decoration: none;
-    }
-
-    .list-icon li{
-        display: inline;
-        margin: 5px;
-        padding-top: 13px;
-        padding-bottom: 13px;
-    }
-
-    /* .list-icon > li a{
-        display: block;
-    } */
-
-    .icon-item a, a:link, 
-    a:visited, a:active{
-        /* color: #2e2e2e; */
-        text-decoration: none;
-    }
-
-    .icon-item > a{
-        margin-left: 5px;
-        padding-top: 2px;
-    }
-
-    .icon-item > a > i{
-        /* margin-right: 5px;
-        margin-left: 5px;
-        padding-top: 2px; */
-        font-size: 20px;
-    }
-}
-
-/* -------------------------------------------------------------------------- */
-/*                         RESPONSIVE RESOLUTION 636px                        */
-/* -------------------------------------------------------------------------- */
-
-@media (max-width: 636px ){
-
-    /* Section del form */
-
-    .form-sect  h3{
-        text-align: center;
-        margin: 10px;
-        margin-top: 15px;
-        margin-bottom: 15px;
-    }
-
-    .contact-form{
-        margin: 25px;
-    }
-    
-    input::placeholder, textarea::placeholder{
-        font-style: italic;      
-    }
-
-    .input-txt{
-        display: block;
-        width: 91%;
-        height: 25px;
-        border: 1px solid #2e2e2e;
-        border-radius: 5px;
-        margin:5px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        padding-top: 5px;
-        padding-left: 10px;
-        padding-right: 10px;
-        padding-bottom: 5px;
-    }
-
-    .input-txtarea{
-        display: block;
-        width: 91%;
-        margin: 5px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        padding-top: 5px;
-        padding-left: 10px;
-        padding-right: 10px;
-        padding-bottom: 5px;
-        border: 1px solid #2e2e2e;
-        border-radius: 5px;
-        resize: none;
-    }
-
-    .form-btn{
-        display: block;
-        width: 30%;
-        height: 20px;
-        margin: 5px;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-        border: 1px solid #2e2e2e;
-        border-radius: 5px;
-        cursor: pointer;
-    }
-
-    /* Section de los iconos */
-
-    .icon-sect{
-        visibility: hidden;
-    }
-}
 
