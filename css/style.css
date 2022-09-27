@@ -195,8 +195,77 @@ color: #6A088C;
     background: -webkit-linear-gradient(left, #151117, #82087F, #B82403);
     opacity: 0.4;
 }
+/* ----------------------------------------------------------------------------*/
+/*                               PRECIOS                                       */
+/* ----------------------------------------------------------------------------*/ 
+
+.precios {
+    
+    background-color: #451c73;
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.head-sect h2{
+    text-align: center;
+    color: #ede5f6;
+    font-size: 25px;
+    padding-top: 20px;
+    background-color: #451c73;
+}
+
+  .card {
+    width: 800px;
+    transition: all 0.3s ease;
+    margin: 10px;
+    border-radius: 0.5rem;
+    background-color: #ede5f6;
+    cursor: pointer;
+  } 
+  section .card:hover {
+    box-shadow: 2px 2px 6px 0px  rgba(0,0,0,1);
+  }
+  
+  .card .text {
+    border: 0;
+    color: #1b0b2e;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    }
+
+.price {
+    font-size: 62px;
+    font-weight: 700;
+    position: relative;
+    color: #1b0b2e;
+    text-align: center;
+}
 
 
+.listica {
+    text-align: center;
+    list-style: none;
+    font-size: 20px;
+    font-weight: 700;
+
+}
+
+.price-text {
+    text-align: center;
+    line-height: 25px;
+}
+
+.bon {
+    font-size: 20px;
+    font-weight: 700;
+    color: #1b0b2e;
+    text-align: center;
+}
+
+
+  
 /* -------------------------------------------------------------------------- */
 /*                              section del form                              */
 /* -------------------------------------------------------------------------- */
