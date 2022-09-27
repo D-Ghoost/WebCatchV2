@@ -34,10 +34,12 @@
     .nav-container__logo-container .webcatch {
         display: block;
         position: relative;
-        top: 5px;
+        top: 30%;
+        right: 50px;
         width: 320px;
         height: 110px;
-        margin-left: 10px;
+        color: aliceblue;
+        font-size: 6rem;
     }
 
     .nav-container__articles-container {

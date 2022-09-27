@@ -36,4 +36,50 @@
         padding: 15px;
         font-weight: 800;
     }
+
+    /* toggle */
+
+.nav-container__toggle {
+    position: absolute;
+    left: calc(100% - 55px);
+    top: calc(0% + 21px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height:21px;
+}
+
+.bar {
+    
+    display: block;
+    height: 4px;
+    width: 100%;
+    background-color:white;
+
+    /* github version */
+    /* background-color: black; */
+    border-radius: 10px;
+}
+
+/* toggle */
+
+.nav-container__toggle {
+    position: absolute;
+    left: calc(100% - 55px);
+    top: calc(6.8% - 35px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height:21px;
+}
+
+.bar {
+    display: block;
+    height: 4px;
+    width: 100%;
+    background-color:white;
+    border-radius: 10px;
+}
 }

@@ -30,10 +30,7 @@ html {
 /////////////////////////////// NAVBAR ///////////////////////////////
 ///////////////////////////////        /////////////////////////////// */
 
-.nav {
-        
 
-}
 
 .nav-container {
     display: flex;
@@ -138,7 +135,7 @@ html {
 
 /* RESPONSIVE DESIGN */
 
-
+/* 
 
 @media (min-width:768px) {
 
@@ -170,9 +167,9 @@ html {
         padding: 15px;
         font-weight: 800;
     }
-}
+} */
 
-@media (min-width:1024px) {
+/* @media (min-width:1024px) {
 
     .nav-container__logo-container .webcatch {
         display: block;
@@ -185,8 +182,8 @@ html {
         font-size: 4rem;
     }
 
-}
-
+} */
+/* 
 @media (min-width:2560px) {
 
     .nav-container {
@@ -244,4 +241,4 @@ html {
         text-decoration: none;
     
     }
-}
+} */
