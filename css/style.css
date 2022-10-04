@@ -217,15 +217,17 @@ color: #6A088C;
 
   .card {
     width: 300px;
-    transition: all 0.3s ease;
-    margin: 10px;
+    transition: all 0.2s ease;
+    margin: 4px;
     border-radius: 0.5rem;
     background-color: #ede5f6;
     cursor: pointer;
+    border: 7px solid transparent;
+    
   } 
   
-  section .card:hover {
-    box-shadow: 2px 2px 6px 0px  rgba(0,0,0,1);
+   .card:hover {
+    border: 7px solid #1b0b2e;
   }
   
   .card .text {
@@ -234,14 +236,21 @@ color: #6A088C;
     padding: 20px;
     width: 100%;
     text-align: center;
+    margin: 5px;
     }
 
 .price {
     font-size: 62px;
     font-weight: 700;
     position: relative;
-    color: #1b0b2e;
+    margin: 20px;
+    color: #ede5f6;
     text-align: center;
+    background-color: #1b0b2e;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 15px 32px;
 }
 
 
@@ -250,6 +259,7 @@ color: #6A088C;
     list-style: none;
     font-size: 20px;
     font-weight: 700;
+    margin: 10px;
 
 }
 
@@ -259,10 +269,18 @@ color: #6A088C;
 }
 
 .bon {
+    margin: 20px;
     font-size: 20px;
     font-weight: 700;
     color: #1b0b2e;
     text-align: center;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 15px 32px;
+    background-color: #ede5f6;
+    border: 2px solid #1b0b2e;
+
 }
 
 @media (max-width: 700px){
