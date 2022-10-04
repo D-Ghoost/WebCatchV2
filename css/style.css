@@ -213,16 +213,18 @@ color: #6A088C;
     font-size: 25px;
     padding-top: 20px;
     background-color: #451c73;
+    padding-bottom: 20px;
 }
 
   .card {
     width: 300px;
     transition: all 0.2s ease;
-    margin: 4px;
     border-radius: 0.5rem;
+    margin: 4px;
     background-color: #ede5f6;
     cursor: pointer;
-    border: 7px solid transparent;
+    border: 7px solid transparent
+
     
   } 
   
