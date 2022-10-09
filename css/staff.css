@@ -1,0 +1,85 @@
+:root {
+    --A:#82087F;
+    --B: #6A088C;
+    --C-PRIMARIO: #3E0D76;
+    --extra1: #350b66;
+    --D: #22088C;
+    --E: #081182;
+}
+.staff-title {
+    padding-top: 28px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    color: aliceblue;
+    background-color: var(--C-PRIMARIO)
+}
+.container {
+    height: 58vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--C-PRIMARIO)
+}
+.staff-container{
+    position: relative;
+    max-width: 1070px;
+    width: 100%;
+    padding: 50px 0;
+    overflow: hidden;
+
+}
+.staff-container .image{
+    height: 170px;
+    width: 170px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.staff-container .slide{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 30px;
+}
+.slide p {
+    text-align: center;
+    padding: 0 100px;
+    font-size: 14px;
+    font-weight: 400;
+    color: aliceblue;
+}
+.slide .details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.slide .name {
+    font-size: 14px;
+    font-weight: 600;
+    color: aliceblue;
+}
+.slide .job {
+    font-size: 12px;
+    font-weight: 400;
+    color: aliceblue;
+}
+/* swiper button css */
+.nav-staff-btn::after,
+.nav-staff-btn:before {
+    font-size: 22px !important;
+    color: #fff;
+}
+.swiper-pagination-bullet{
+    background-color: aliceblue !important;
+}
+
+@media screen and (max-width: 1024px) {
+    .slide p{
+        padding: 0 20px;
+    }
+    .nav-staff-btn{
+        display: none !important;
+    }
+}
