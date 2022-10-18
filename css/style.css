@@ -23,7 +23,30 @@
     margin: 0;
 }
 
+html {
+    font-size: 62.5%;
+}
 /* FUENTES */
+
+/* FUENTES */
+
+@font-face {
+    font-family: 'JosefinSans';
+    src: url('font/JosefinSans-VariableFont_wght.ttf') format("truetype"),
+    url("font/JosefinSans-Italic-VariableFont_wght.ttf") format("truetype");
+        
+}
+
+@font-face {
+    font-family: 'Rubik';
+    src: url('font/Rubik-VariableFont_wght.ttf') format("truetype"),
+    url("font/Rubik-Italic-VariableFont_wght.ttf") format("truetype");
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'JosefinSans', 'Rubik';
+}
 
 @font-face {
     font-family: 'JosefinSans';
@@ -55,6 +78,8 @@ html {
     height: auto;
     background-color: var(--C-PRIMARIO);
 
+    /* github version */
+    /* background-color: ghostwhite; */
 }
 
 /* LOGO */
@@ -86,6 +111,9 @@ html {
     align-items: flex-start;
     flex-direction: column;
     background-color: var(--extra1);
+
+    /* github version */
+    /* background-color:rgba(250, 248, 255, 0.945) ; */
 }   
 
 .nav__articles.active {
@@ -100,12 +128,18 @@ html {
 
 .nav__text:hover {
     background-color: var(--B);
+    
+    /* github version */
+    /* background-color: grey; */
 
 }
 
 .nav__text a {
     line-height: 3.3rem;
     color: aliceblue;
+    
+    /* github version */
+    /* color: black; */
     text-decoration: none;
 
 }
@@ -116,7 +150,7 @@ html {
 .nav-container__toggle {
     position: absolute;
     left: calc(100% - 55px);
-    top: calc(6.8% - 35px);
+    top: calc(0% + 21px);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -125,10 +159,14 @@ html {
 }
 
 .bar {
+    
     display: block;
     height: 4px;
     width: 100%;
     background-color:white;
+
+    /* github version */
+    /* background-color: black; */
     border-radius: 10px;
 }
 
@@ -207,7 +245,9 @@ color: #6A088C;
     margin: 10px;
     margin-top: 15px;
     margin-bottom: 15px;
-    font-size: 25px;
+    width: 100px;
+    height: 60px;
+    margin-left: 30px;
 }
 
 .contact-form{
@@ -313,6 +353,111 @@ input::placeholder, textarea::placeholder{
     .icon-sect{
         visibility: hidden;
     }
+/* -------------------------------------------------------------------------- */
+/*                                   INICIO                                   */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                                   PROYECTOS                                  */
+/* -------------------------------------------------------------------------- */
+.portfolio,
+.contact-section {
+  width: 100vw;
+  background-color: var(--C-PRIMARIO);
+  color: #1b0b2e;
+  align-items: center;
+}
+
+.portfolio-heading {
+  width: 100xp;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5em;
+}
+
+
+.portfolio-heading h2,
+.contact-heading h2 {
+  font-size: 70px;
+  color: #fff;
+  border-radius: 3px;
+  overflow: hidden;
+  border: 7px solid transparent;
+  padding-left: 510px;
+  padding-top: 70px;
+}
+
+.portfolio .container {
+  width: 80vw;
+  height: 80vh;
+  margin:  auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  width: 600px;
+  background-color: #ede5f6;
+  margin: 40px;
+  box-shadow: 0px 1px 10 px rgba(0,0,0,0,.2);
+  cursor: pointer;
+  border-radius: 6px;
+  overflow: hidden;
+  border: 7px solid transparent;
+}
+
+.card:hover {
+    border: 8px solid #1b0b2e;
+  }
+
+.pcard__img {
+  width: 110%;
+  height: 350px;
+  background-image: url(../img/cat.jpg);
+  background-size: cover;
+}
+
+.project__title {
+  padding: 20px;
+  font-size: 15px;
+
+}
+
+.portfolio span{
+    background: purple;
+    color: black;
+    padding:  .4rem .10rem;
+    border-radius: 4px;
+    font-size: 20px;
+    padding-left: 5px;    
+    margin-bottom: 5px;
+}
+
+.content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.4);
+    opacity: 4;
+    transition: .3s;
+    padding: 5px ;
+    padding-left: 5px;
+    font-size: 15px;    
+}
+
+.content h2, a{
+    color: rgba(255, 255, 255 .8);
+
+}
+
+.card:hover .content{
+    opacity: 1;
+    transform: scale(1.3);
+}
 
 /* ----------------------------------------------------------------------------*/
 /*                               FOOTER                                        */
