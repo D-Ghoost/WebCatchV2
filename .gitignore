@@ -4,3 +4,5 @@
 img
 # node_modules
 node_modules
+# Carpeta creada para live Server
+.vscode
