@@ -1,9 +1,178 @@
-/*Imagen de inicio animada con movimiento*/
+/* REGLA GENERAL PARA CREAR ESTILOS CSS (buena practica, tener esto)
+1. Posicionamiento --> static, absolute, relative, fixed
+2. Modelo de caja (Box model) --> margin, border, padding, content
+3. Tipografía --> tipos, tamaños de fuente, etc
+4. Estilos visuales --> box-shadow, border-radius, gradient, etc
+5.  Otros --> reglas CSS y más
+*/
 
-body{
-        margin: 0;
-        padding: 0;
+:root {
+    --A:#82087F;
+    --B: #6A088C;
+    --C-PRIMARIO: #6E2DB8;
+    --extra1: #350b66;
+    --D: #22088C;
+    --E: #081182;
 }
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+/* FUENTES */
+
+/* FUENTES */
+
+@font-face {
+    font-family: 'JosefinSans';
+    src: url('font/JosefinSans-VariableFont_wght.ttf') format("truetype"),
+    url("font/JosefinSans-Italic-VariableFont_wght.ttf") format("truetype");
+        
+}
+
+@font-face {
+    font-family: 'Rubik';
+    src: url('font/Rubik-VariableFont_wght.ttf') format("truetype"),
+    url("font/Rubik-Italic-VariableFont_wght.ttf") format("truetype");
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'JosefinSans', 'Rubik';
+}
+
+@font-face {
+    font-family: 'JosefinSans';
+    src: url('font/JosefinSans-VariableFont_wght.ttf') format("truetype"),
+    url("font/JosefinSans-Italic-VariableFont_wght.ttf") format("truetype");
+        
+}
+
+@font-face {
+    font-family: 'Rubik';
+    src: url('font/Rubik-VariableFont_wght.ttf') format("truetype"),
+    url("font/Rubik-Italic-VariableFont_wght.ttf") format("truetype");
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'JosefinSans', 'Rubik';
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   NAVBAR                                   */
+/* -------------------------------------------------------------------------- */
+
+
+.nav-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    background-color: var(--C-PRIMARIO);
+
+    /* github version */
+    /* background-color: ghostwhite; */
+}
+
+/* LOGO */
+
+.nav-container__logo-container {
+    width: 180px;
+    height: 66px;
+    display: flex;
+    align-items: center;
+
+}
+
+.nav-container__logo-container .cow {
+    width: 100px;
+    height: 60px;
+    margin-left: 30px;
+}
+
+.nav-container__logo-container .webcatch {
+    display: none;
+}
+
+/* OPTIONS */
+
+
+.nav__articles{
+    display: none;
+    list-style: none;
+    align-items: flex-start;
+    flex-direction: column;
+    background-color: var(--extra1);
+
+    /* github version */
+    /* background-color:rgba(250, 248, 255, 0.945) ; */
+}   
+
+.nav__articles.active {
+    display: flex;
+}
+
+.nav__text {
+
+    width: 100%;
+    text-align: center;
+}
+
+.nav__text:hover {
+    background-color: var(--B);
+    
+    /* github version */
+    /* background-color: grey; */
+
+}
+
+.nav__text a {
+    line-height: 3.3rem;
+    color: aliceblue;
+    
+    /* github version */
+    /* color: black; */
+    text-decoration: none;
+
+}
+
+
+/* toggle */
+
+.nav-container__toggle {
+    position: absolute;
+    left: calc(100% - 55px);
+    top: calc(0% + 21px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height:21px;
+}
+
+.bar {
+    
+    display: block;
+    height: 4px;
+    width: 100%;
+    background-color:white;
+
+    /* github version */
+    /* background-color: black; */
+    border-radius: 10px;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*                                   INICIO                                   */
+/* -------------------------------------------------------------------------- */
+
 /*Contenedor con imagen de fondo*/
 .inicio-contenedor{
 width: 100%;
@@ -39,7 +208,7 @@ background-image: url(../img/World.jpg);
 /*Estilo Fuentes*/
 .iniciotexto h1{
 font-size: 60px;
-font-family: sans-serif;
+font-family: 'JosefinSans', 'Rubik';
 color: #6A088C;
 }
 
@@ -61,4 +230,188 @@ color: #6A088C;
     position: absolute;
     background: -webkit-linear-gradient(left, #151117, #82087F, #B82403);
     opacity: 0.4;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                               ¿QUIENES SOMOS?                              */
+/* -------------------------------------------------------------------------- */
+.about-sect {
+    margin: 30px;
+    border: #151117 2px solid;
+    border-radius: 5px;
+    padding: 15px;
+}
+.about-title{
+    font-size: 25px;
+    text-align: center;
+}
+.about-content{
+    font-size: 14px;
+    text-align: center;
+}
+/* -------------------------------------------------------------------------- */
+/*                              section del form                              */
+/* -------------------------------------------------------------------------- */
+
+
+.form-sect  h2{
+    text-align: center;
+    margin: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 25px;
+}
+
+.contact-form{
+    margin: 25px;
+}
+
+input::placeholder, textarea::placeholder{
+    font-style: italic;      
+}
+
+.input-txt{
+    display: block;
+    width: 99%;
+    height: 25px;
+    border: 1px solid #2e2e2e;
+    border-radius: 5px;
+    margin:5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+}
+
+.input-txtarea{
+    display: block;
+    width: 99%;
+    margin: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    border: 1px solid #2e2e2e;
+    border-radius: 5px;
+    resize: none;
+}
+
+.form-btn{
+    display: block;
+    width: 30%;
+    height: 20px;
+    margin: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border: 1px solid #2e2e2e;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+    .form-btn:hover{
+        color: white;
+        font-weight: bold;
+        background-color: #3E0D76;
+    }
+
+    /* Section de los iconos */
+    .list-icon{
+        text-align: center;
+    }
+
+    .list-icon > li a{
+        text-decoration: none;
+    }
+
+    .list-icon li{
+        list-style: none;
+        text-decoration: none;
+    }
+
+    .list-icon li{
+        display: inline;
+        margin: 5px;
+        padding-top: 13px;
+        padding-bottom: 13px;
+    }
+
+    /* .list-icon > li a{
+        display: block;
+    } */
+
+    .icon-item a, a:link, 
+    a:visited, a:active{
+        /* color: #2e2e2e; */
+        text-decoration: none;
+    }
+
+    .icon-item > a{
+        margin-left: 5px;
+        padding-top: 2px;
+    }
+
+    .icon-item > a > i{
+        /* margin-right: 5px;
+        margin-left: 5px;
+        padding-top: 2px; */
+        font-size: 20px;
+    }
+
+    .icon-sect{
+        visibility: hidden;
+    }
+
+/* ----------------------------------------------------------------------------*/
+/*                               FOOTER                                        */
+/* ----------------------------------------------------------------------------*/   
+
+
+.footer{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: #171618 ;
+}
+
+.footer-info{
+
+padding-top: 10px;
+}
+
+.icon-phone{
+margin: 10px;
+}
+
+.icon-mail{
+margin: 20px;
+}
+
+/*.icon-location{
+margin: 10px
+}*/
+
+.linea{
+border-top: 1px solid grey;
+height: 2px;
+margin-top: 30px;
+margin-bottom: 30px;
+margin-left: 50px;
+margin-right: 50px;
+
+}
+
+ul.lista li {
+display: inline;
+padding-right: 0.5em;
+}
+
+.footer-copy{
+    color: #6b6b6b;
+    margin-top: 20px;
+    padding-bottom: 30px;
 }
