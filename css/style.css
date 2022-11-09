@@ -8,6 +8,13 @@
 5.  Otros --> reglas CSS y más
 */
 
+/* VARIABLES GLOBALES */
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+
 :root {
     --A:#82087F;
     --B: #6A088C;
@@ -18,6 +25,7 @@
 }
 
 body{
+        font-family: "Helvetica";
         margin: 0;
         padding: 0;
 }
@@ -30,62 +38,62 @@ body{
 
 /*Contenedor con imagen de fondo*/
 .inicio-contenedor{
-width: 100%;
-height: 400px;
-background-image: url(../img/bckimg.jpg);
-background-size: 110%;
-animation: mov 15s infinite linear alternate;
-position: relative;
--webkit-transition: background 1s;
--moz-transition: background 1s;
--o-transition: background 1s;
-transition: background 1s;
-}
-
-.inicio-contenedor:hover{
-background-image: url(../img/World.jpg);
-}
-/* Contenedor principal*/
-.cajainicio{
-    width:100%;
-
-}
-/*Posición de la descripcion de texto*/
-.iniciotexto{
+    width: 100%;
+    height: 400px;
+    background-image: url(../img/bckimg.jpg);
+    background-size: 110%;
+    animation: mov 15s infinite linear alternate;
     position: relative;
-    text-align: center;
-    width: 100%;
-    max-width: 500px;
-    margin: 0 auto;
-    top: 60px;
-}
-
-/*Estilo Fuentes*/
-.iniciotexto h1{
-font-size: 60px;
-font-family: 'JosefinSans', 'Rubik';
-color: #6A088C;
-}
-
-.iniciotexto p{
-    font-size: 14px;
-    color: #FFFF;
-}
-
-/*Animcacion de movimiento*/
-@keyframes mov{
-    from {background-position: bottom right;}
-    to {background-position: top left;}    
-}
-
-/*Color de degradado de imagen*/
-.iniciodegrad{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    background: -webkit-linear-gradient(left, #151117, #82087F, #B82403);
-    opacity: 0.4;
-}
+    -webkit-transition: background 1s;
+    -moz-transition: background 1s;
+    -o-transition: background 1s;
+    transition: background 1s;
+    }
+    
+    .inicio-contenedor:hover{
+    background-image: url(../img/World.jpg);
+    }
+    /* Contenedor principal*/
+    .cajainicio{
+        width:100%;
+    
+    }
+    /*Posición de la descripcion de texto*/
+    .iniciotexto{
+        position: relative;
+        text-align: center;
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+        top: 60px;
+    }
+    
+    /*Estilo Fuentes*/
+    .iniciotexto h1{
+    font-size: 60px;
+    font-family: 'JosefinSans', 'Rubik';
+    color: #6A088C;
+    }
+    
+    .iniciotexto p{
+        font-size: 14px;
+        color: #FFFF;
+    }
+    
+    /*Animcacion de movimiento*/
+    @keyframes mov{
+        from {background-position: bottom right;}
+        to {background-position: top left;}    
+    }
+    
+    /*Color de degradado de imagen*/
+    .iniciodegrad{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background: -webkit-linear-gradient(left, #151117, #82087F, #B82403);
+        opacity: 0.4;
+    }
 /* ----------------------------------------------------------------------------*/
 /*                               PRECIOS                                       */
 /* ----------------------------------------------------------------------------*/ 
@@ -566,32 +574,4 @@ padding-right: 0.5em;
 /* ----------------------------------------------------------------------------*/  
 
 
-/* VARIABLES GLOBALES */
-*{
-    margin: 0px;
-    padding: 0px;
 
-}
-
-body{
-    font-family: "Helvetica";
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<<<<<<< HEAD
->>>>>>> D-Ghoost
->>>>>>> main
-=======
->>>>>>> main
