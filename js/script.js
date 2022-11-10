@@ -3,4 +3,7 @@ const navbarlinks = document.getElementsByClassName ("nav__articles") [0]
 
 toggleButton.addEventListener('click', () => {
     navbarlinks.classList.toggle('active')
+
 })
+
+

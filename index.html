@@ -18,127 +18,190 @@
     <title>WebCatch</title>
     
 </head>
-
 <body>
-<!-- ----------------------------------------------------------------------- -->
-<!--                                 NAVBAR                                  -->
-<!-- ----------------------------------------------------------------------- -->
-    <header>
-       <!-- -------------------------------- Logo --------------------------------- -->
-
-        <nav class="nav">
-            <section class="nav-container">
-                <div class="nav-container__logo-container"> 
-                    <a href="#inicio"> <img class="cow" src="./img/LogoSoloCowBig.png" alt=""></a> 
-                    <!-- github version -->
-                    <!-- <a href="#inicio"> <img class="cow" src="./img/LogoSoloCowBig.svg" alt=""></a>  -->
-                    <!-- <img class="webcatch" src="./img/WebCatchTextNoBGv4.png" alt=""> -->
-                    <h2 class="webcatch">WebCatch</h2>
-                </div>
-                <!-- ---------------------------- TOGGLE MOBILE ---------------------------- -->
-                <a href="#" class="nav-container__toggle" >
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-
-                </a>
-                <!-- ------------------------------- OPTIONS ------------------------------- -->
-                <div class="nav-container__articles-container">
-                    <ul class="nav__articles">
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                                 NAVBAR                                  -->
+    <!-- ----------------------------------------------------------------------- -->
+        <header>
+           <!-- -------------------------------- Logo --------------------------------- -->
+    
+            <nav class="nav">
+                <section class="nav-container">
+                    <div class="nav-container__logo-container"> 
+                        <img class="cow" src="./img/LogoSoloCowBig.png" alt=""> 
+                        <img class="webcatch" src="./img/WebCatchTextNoBGv4.png" alt="">
+                    </div>
+                    <!-- ---------------------------- TOGGLE MOBILE ---------------------------- -->
+                    <a href="#" class="nav-container__toggle" >
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+    
+                    </a>
+                    <!-- ------------------------------- OPTIONS ------------------------------- -->
+                    <div class="nav-container__articles-container">
+                        <ul class="nav__articles">
                         <li id="inicio" class="nav__text"> <a href="#inicio">INICIO</a></li>
-                        <li class="nav__text"> <a href="#">ABOUT US</a></li>
-                        <li class="nav__text"> <a href="#">PROYECTOS</a></li>
-                        <li class="nav__text"> <a href="#">STAFF</a></li>
-                        <li class="nav__text"> <a href="#">PRECIOS</a></li>
-                        <li class="nav__text"> <a href="#">CONTACTENOS</a></li>
-                    </ul>
+                            <li class="nav__text"> <a href="#">ABOUT US</a></li>
+                            <li class="nav__text"> <a href="#">PROYECTOS</a></li>
+                            <li class="nav__text"> <a href="#">STAFF</a></li>
+                            <li class="nav__text"> <a href="#">PRECIOS</a></li>
+                            <li class="nav__text"> <a href="#">CONTACTENOS</a></li>
+                        </ul>
+                    </div>
+                </section>
+            </nav>
+        </header>
+        <!-- ----------------------------------------------------------------------- -->
+        <!--                               FIN NAVBAR                                -->
+        <!-- ----------------------------------------------------------------------- -->
+        <!-- ----------------------------------------------------------------------- -->
+        <!--                                 INICIO                                  -->
+        <!-- ----------------------------------------------------------------------- -->
+        <div class="inicio-contenedor">
+            <div class="iniciodegrad"></div>            
+            <div class="cajainicio">
+                <div class="iniciotexto">        
+                    <h1>Webcatch</h1>
+                    <p>Este es un texto de referencia Este es un texto de referenciaEste es un texto de referenciaEste es un texto de referenciaEste es un texto de referenciaEste es un texto de referencia</p>
                 </div>
-            </section>
-        </nav>
-    </header>
-    <!-- ----------------------------------------------------------------------- -->
-    <!--                               FIN NAVBAR                                -->
-    <!-- ----------------------------------------------------------------------- -->
-    <!-- ----------------------------------------------------------------------- -->
-    <!--                                 INICIO                                  -->
-    <!-- ----------------------------------------------------------------------- -->
-    <div class="inicio-contenedor">
-        <div class="iniciodegrad"></div>            
-        <div class="cajainicio">
-            <div class="iniciotexto">        
-                <h1>Webcatch</h1>
-                <p>Este es un texto de referencia Este es un texto de referenciaEste es un texto de referenciaEste es un texto de referenciaEste es un texto de referenciaEste es un texto de referencia</p>
             </div>
         </div>
-    </div>
-    <!-- ----------------------------------------------------------------------- -->
-    <!--                               FIN INICIO                                -->
-    <!-- ----------------------------------------------------------------------- -->
-    <article class="contact-art">
         <!-- ----------------------------------------------------------------------- -->
-        <!--                         Formulario de contacto                          -->
+        <!--                               FIN INICIO                                -->
         <!-- ----------------------------------------------------------------------- -->
-        <section class="form-sect">
-            <h2>Contacta con nosotros</h2>
-            <form class="contact-form" method="get" id="cont-form">
-                <input name="userName" type="text" placeholder="Ingresa tu nombre" class="input-txt"  minlength="3">
-                <input name="userEmail" type="email" placeholder="Ingresa tu correo" class="input-txt"  minlength="4">
-                <input name="userSubject" type="text" placeholder="Ingresa el asunto" class="input-txt" min="4">
-                <textarea  name="userMsm" cols="30" rows="10" placeholder="Mensaje" class="input-txtarea"  minlength="4"></textarea>
-                <button class="form-btn" id="contact-btn" type="submit">Enviar</button>
-            </form>
-            <!-- Pop up que muestra mensaje en pantalla -->
-            <dialog id="pop-up">
-                    <button id="pop-btn">Aceptar</button>
-            </dialog>
+        <article class="contact-art">
+        <!-- ----------------------------------------------------------------------- -->
+        <!--                             PRECIOS                                     -->
+        <!-- ----------------------------------------------------------------------- -->
+        <div class="head-sect">
+            <h2>Precios</h2>
+        </div>
+        <section class="precios">
+            <article class="card">
+                <h2 class="text">Personal</h2>  
+                <div class="price">
+                    <span>$</span>
+                    20
+                </div>
+                <div>
+                    <p class="price-text">Content pending</p>
+                </div>
+                <div class="conte">
+                    <ul class="listica">
+                        <li>Caracteristica 1</li>
+                        <li>Caracteristica 2</li>
+                        <li>Caracteristica 3</li>
+                        <li>Caracteristica 4</li>
+                    </ul>
+                    <p class="bon">Buy</p>
+                </div>
+            </article>
+            <article class="card">
+                <h2 class="text">Estudiante</h2> 
+                <div class="price">
+                    <span>$</span>
+                    40
+                </div>
+                <div>
+                    <p class="price-text">Content pending</p>
+                </div>
+                <div class="conte">
+                    <ul class="listica">
+                        <li>Caracteristica 1</li>
+                        <li>Caracteristica 2</li>
+                        <li>Caracteristica 3</li>
+                        <li>Caracteristica 4</li>
+                    </ul>
+                    <p class="bon">Buy</p>
+                </div> 
+            </article>
+            <article class="card">
+                <h2 class="text">Empresa</h2>
+                <div class="price">
+                    <span>$</span>
+                    50
+                </div>
+                <div>
+                    <p class="price-text">Content pending</p>
+                </div>
+                <div class="conte">
+                    <ul class="listica">
+                        <li>Caracteristica 1</li>
+                        <li>Caracteristica 2</li>
+                        <li>Caracteristica 3</li>
+                        <li>Caracteristica 4</li>
+                    </ul>
+                    <p class="bon">Buy</p>
+                </div>   
+            </article>
         </section>
-        <!-- Iconos de github de los devCatcher -->
-        <section class="icon-sect">
-            <ul class="list-icon">
-                <li class="icon-item">
-                    <a href="https://github.com/Groovesgt">
-                        <i class='bx bxl-github'></i>
-                        @Groovesgt
-                    </a>
-                </li>
-                <li class="icon-item">
-                    <a href="https://github.com/Oscardanch">
-                        <i class='bx bxl-github'></i>
-                        @Oscardanch
-                    </a>
-                </li>
-                <li class="icon-item">
-                    <a href="https://github.com/nisbero">
-                        <i class='bx bxl-github'></i>
-                        @nisbero
-                    </a>
-                </li>
-                <li class="icon-item">
-                    <a href="https://github.com/Jusky98">
-                        <i class='bx bxl-github'></i>
-                        @Jusky98
-                    </a>
-                </li>
-                <li class="icon-item">
-                    <a href="https://github.com/D-Ghoost">
-                        <i class='bx bxl-github'></i>
-                        @D-Ghoost
-                    </a>
-                </li>
-                <li class="icon-item">
-                    <a href="https://github.com/BlackCodee">
-                        <i class='bx bxl-github'></i>
-                        @BlackCodee
-                    </a>
-                </li>
-            </ul>
-        </section>
-    </article>
-    <!-- ----------------------------------------------------------------------- -->
-    <!--                             FIN CONTACTENOS                             -->
-    <!-- ----------------------------------------------------------------------- -->
-
-    <!-- ----------------------------------------------------------------------- -->
+        <!-- ----------------------------------------------------------------------- -->
+        <!--                             FIN PRECIOS                                 -->
+        <!-- ----------------------------------------------------------------------- -->
+            <!-- ----------------------------------------------------------------------- -->
+            <!--                         Formulario de contacto                          -->
+            <!-- ----------------------------------------------------------------------- -->
+            <section class="form-sect">
+                <h2>Contacta con nosotros</h2>
+                <form class="contact-form" method="get" id="cont-form">
+                    <input name="userName" type="text" placeholder="Ingresa tu nombre" class="input-txt"  minlength="3">
+                    <input name="userEmail" type="email" placeholder="Ingresa tu correo" class="input-txt"  minlength="4">
+                    <input name="userSubject" type="text" placeholder="Ingresa el asunto" class="input-txt" min="4">
+                    <textarea  name="userMsm" cols="30" rows="10" placeholder="Mensaje" class="input-txtarea"  minlength="4"></textarea>
+                    <button class="form-btn" id="contact-btn" type="submit">Enviar</button>
+                </form>
+                <!-- Pop up que muestra mensaje en pantalla -->
+                <dialog id="pop-up">
+                        <button id="pop-btn">Aceptar</button>
+                </dialog>
+            </section>
+            <!-- Iconos de github de los devCatcher -->
+            <section class="icon-sect">
+                <ul class="list-icon">
+                    <li class="icon-item">
+                        <a href="https://github.com/Groovesgt">
+                            <i class='bx bxl-github'></i>
+                            @Groovesgt
+                        </a>
+                    </li>
+                    <li class="icon-item">
+                        <a href="https://github.com/Oscardanch">
+                            <i class='bx bxl-github'></i>
+                            @Oscardanch
+                        </a>
+                    </li>
+                    <li class="icon-item">
+                        <a href="https://github.com/nisbero">
+                            <i class='bx bxl-github'></i>
+                            @nisbero
+                        </a>
+                    </li>
+                    <li class="icon-item">
+                        <a href="https://github.com/Jusky98">
+                            <i class='bx bxl-github'></i>
+                            @Jusky98
+                        </a>
+                    </li>
+                    <li class="icon-item">
+                        <a href="https://github.com/D-Ghoost">
+                            <i class='bx bxl-github'></i>
+                            @D-Ghoost
+                        </a>
+                    </li>
+                    <li class="icon-item">
+                        <a href="https://github.com/BlackCodee">
+                            <i class='bx bxl-github'></i>
+                            @BlackCodee
+                        </a>
+                    </li>
+                </ul>
+            </section>
+        </article>
+        <!-- ----------------------------------------------------------------------- -->
+        <!--                             FIN CONTACTENOS                             -->
+        <!-- ----------------------------------------------------------------------- -->
+        <!-- ----------------------------------------------------------------------- -->
     <!--                                 STAFF                                   -->
     <!-- ----------------------------------------------------------------------- -->
     <h1 class="staff-title">STAFF</h1>    
@@ -210,6 +273,7 @@
     <!-- ----------------------------------------------------------------------- -->
     <!--                              FIN STAFF                                  -->
     <!-- ----------------------------------------------------------------------- -->
+        <!-- ----------------------------------------------------------------------- -->
     <!-- ----------------------------------------------------------------------- -->
     <!--                        Inicio del Pie de Pagina                         -->
     <!-- ----------------------------------------------------------------------- -->
@@ -219,19 +283,19 @@
                 <img class="iconp" src="img/phone.png" width="30"/>
             <br>
                 <p>
-                    <span style="color: #fff;">(+57) 1234567</span>
+                    <span style="color: #ede5f6;">(+57) 1234567</span>
                 </p>
             </div>
             <div class="icon-mail">
                 <img class="iconm" src="img/GMail.png" width="20"/>
                 <p>
-                    <span style="color: #fff;">webcatch.info@gmail.com</span>
+                    <span style="color: #ede5f6;">webcatch.info@gmail.com</span>
                 </p>
             </div>
             <div class="icon-location">
                 <img class="iconl" src="img/map.png" width="50"/>
                 <p>
-                    <span style="color: #fff;">
+                    <span style="color: #ede5f6;">
                         Carrera 69 F 64 21
                         <br>
                         Bogotá Colombia              
